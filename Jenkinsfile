@@ -1,4 +1,5 @@
 pipeline {
+    agent { docker 'maven' }
     stages {
         stage('build') {
             steps {
